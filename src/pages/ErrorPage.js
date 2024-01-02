@@ -1,5 +1,12 @@
+import NavBar from "../components/NavBar.js"
 function ErrorPage() {
-    return <h1>Error Page</h1>
+    return (
+        <>
+            <header>
+                {<NavBar />}
+            </header>
+        </>
+    )
 }
 
 export default ErrorPage
