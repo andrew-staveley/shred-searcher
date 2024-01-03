@@ -1,6 +1,7 @@
 import NavBar from "../components/NavBar.js"
 import {useState, useEffect} from "react"
 import MountainCard from "../components/MountainCard.js"
+import "../css/StatePage.css"
 
 function Vermont() {
     const [mountains, setMountains] = useState([])
@@ -19,7 +20,7 @@ function Vermont() {
                 {<NavBar />}
             </header>
             <main>
-                <h1>Vermont</h1>
+                <h1 className="statename">Vermont</h1>
                 {vermontMountains.map((mountain) => <MountainCard key={mountain.id} mountain={mountain} />)}
             </main>
         </>
