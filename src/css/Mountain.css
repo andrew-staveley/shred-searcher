@@ -1,3 +1,20 @@
 img {
-    width: 500px
+    width: 1000px
+}
+
+.moreinfo {
+    float: right;
+    background: skyblue;
+    padding: 30px;
+    margin-right: 200px;
+}
+
+button {
+    background: skyblue;
+    padding: 30px;
+    margin: 30px;
+}
+
+.buttons {
+    text-align: center;
 }
