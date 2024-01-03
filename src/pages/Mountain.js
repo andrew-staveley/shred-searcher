@@ -7,7 +7,7 @@ function Mountain() {
     const params = useParams()
     const mountainID = params.id
     useEffect(() => {
-        fetch(`http://localhost:3000/mountains/${mountainID}`)
+        fetch(`http://localhost:4000/mountains/${mountainID}`)
         .then((r) => r.json())
         .then((data) => setMountain(data))
     })
