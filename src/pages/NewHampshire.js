@@ -19,6 +19,7 @@ function NewHampshire() {
                 {<NavBar />}
             </header>
             <main>
+                <h1>New Hampshire</h1>
                 {newHampshireMountains.map((mountain) => <MountainCard key={mountain.id} mountain={mountain} />)}
             </main>
         </>
