@@ -4,14 +4,26 @@
     width: 140px;
     padding: 5px;
     margin: 0 6px 6px;
-    background: lightblue;
+    background: skyblue;
     text-decoration: none;
     text-align: center;
-    font-size: min(10vw, 15px) ;
+    font-size: min(10vw, 15px);
     color: black;
+    border-color: black;
+    border-style: inset;
+    border-width: 2px;
 }
   
 a.active {
     background: black;
     color: white;
+}
+
+.titlenavbar {
+    color: black;
+}
+
+.navbar {
+    background-color: lightgrey;
+    padding: 20px;
 }
