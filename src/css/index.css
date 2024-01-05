@@ -2,3 +2,9 @@
     font-family: Helvetica;
     text-align: Center;
 }
+
+button {
+    background: skyblue;
+    padding: 30px;
+    margin: 30px;
+}

@@ -17,3 +17,19 @@
     margin: auto;
     list-style: none;
 }
+
+.statebutton {
+    width: 700px;
+    height: 100px;
+    background-image: url("../images/skiierphoto.jpg");
+    background-position: 50% 40%;
+    font-size: larger;
+    font-weight: bold;
+}
+
+#mountainbuttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
