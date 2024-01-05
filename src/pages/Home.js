@@ -1,4 +1,5 @@
 import NavBar from "../components/NavBar.js"
+import {Link} from "react-router-dom"
 import "../css/Home.css"
 
 function Home() {
@@ -8,9 +9,30 @@ function Home() {
                 {<NavBar />}
             </header>
             <main>
-                <h1>Welcome to Shred Searcher</h1>
-                <h2>This is where you can find your next adventure</h2>
-                <h3>Currently only availible for mountains in New England</h3>
+                <div id="top">
+                    <h1>Welcome to Shred Searcher</h1>
+                    <p>This is your one stop shop to find a New England area mountain</p>
+                    <p>Explore the mountains and find some that you've been too, or would like to go too!</p>
+                </div>
+                <div id="mountainbuttons">
+                    <Link to="/maine"><button className="statebutton">Maine</button></Link>
+                    <Link to="/newhampshire"><button className="statebutton">New Hampshire</button></Link>
+                    <Link to="/vermont"><button className="statebutton">Vermont</button></Link>
+                </div>
+                <div id="bottom">
+                    <div id="shredlist">
+                        <h3>Places I've Been</h3>
+                        <ul>
+                            <li>Placeholder</li>
+                        </ul>
+                    </div>
+                    <div id="shredwishlist">
+                        <h3>Places to Shred</h3>
+                        <ul>
+                            <li>Placeholder</li>
+                        </ul>
+                    </div>
+                </div>
             </main>
         </>
     )
