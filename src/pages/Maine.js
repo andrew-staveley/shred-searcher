@@ -21,7 +21,9 @@ function Maine() {
             </header>
             <main>
                 <h1 className="statename">Maine</h1>
-                {maineMountains.map((mountain) => <MountainCard key={mountain.id} mountain={mountain}/>)}
+                <div className="mountaincard">
+                    {maineMountains.map((mountain) => <MountainCard key={mountain.id} mountain={mountain}/>)}
+                </div>
             </main>
         </>
     )

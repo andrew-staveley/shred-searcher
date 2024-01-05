@@ -7,11 +7,29 @@ function Mountain() {
     const [mountain, setMountain] = useState([])
     const params = useParams()
     const mountainID = params.id
+
     useEffect(() => {
         fetch(`http://localhost:4000/mountains/${mountainID}`)
         .then((r) => r.json())
         .then((data) => setMountain(data))
     }, [mountainID])
+
+    function haveSkiiedHandler(e) {
+        e.preventDefault()
+        console.log("Added to Have Skiied List")
+
+    }
+
+    function wantToSkiHandler(e) {
+        e.preventDefault()
+        console.log("Added to want to ski list")
+    }
+
+    function resortPageHandler(e) {
+        e.preventDefault()
+        window.open(mountain.link)
+    }
+
     return (
         <>
             <header>
@@ -23,17 +41,15 @@ function Mountain() {
                 <img alt='mountain trail map' src={mountain.maplink} />
                 <div className="moreinfo">
                     <h2>More Information</h2>
-                    <ul>
-                        <li>Nightskiing? {mountain.nightski}</li>
-                        <li>Shredable Area: {mountain.area}</li>
-                        <li>Summit Elevation: {mountain.elevation}</li>
-                        <li>Number of Runs: {mountain.trails}</li>
-                    </ul>
+                    <p>Nightskiing? {mountain.nightski}</p>
+                    <p>Shredable Area: {mountain.area}</p>
+                    <p>Summit Elevation: {mountain.elevation}</p>
+                    <p>Number of Runs: {mountain.trails}</p>
                 </div>
                 <div className="buttons">
-                    <button id="haveskiied">I've Shredded This Mountain</button>
-                    <button id="wannaski">I Wanna Shred This Mountain</button>
-                    <button id="resortpage">Visit {mountain.name}</button>
+                    <button id="haveskiied" onClick={haveSkiiedHandler}>I've Shredded This Mountain</button>
+                    <button id="wannaski" onClick={wantToSkiHandler}>I Wanna Shred This Mountain</button>
+                    <button id="resortpage" onClick={resortPageHandler}>Visit {mountain.name}</button>
                 </div>
             </main>
         </>
