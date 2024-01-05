@@ -1,0 +1,19 @@
+#shredlist {
+    width: 45%;
+    float: right;
+    flex-direction: column;
+    background: lightgrey;
+    padding: 10px;
+    margin: auto;
+    list-style: none;
+}
+
+#shredwishlist {
+    width: 45%;
+    float: left;
+    flex-direction: column;
+    background: lightgrey;
+    padding: 10px;
+    margin: auto;
+    list-style: none;
+}

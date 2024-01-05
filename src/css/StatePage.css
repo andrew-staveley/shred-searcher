@@ -3,8 +3,13 @@
     padding: 20px;
     margin: 10px;
     width: 600px;
-    display: center;
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
 }
+
 .statename {
     text-align: center;
 }
