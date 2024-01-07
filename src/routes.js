@@ -3,6 +3,7 @@ import Maine from "./pages/Maine.js"
 import NewHampshire from "./pages/NewHampshire.js"
 import Vermont from "./pages/Vermont.js"
 import Mountain from "./pages/Mountain.js"
+import NewMountain from "./pages/NewMountain.js"
 import ErrorPage from "./pages/ErrorPage.js"
 
 const routes = [
@@ -24,6 +25,11 @@ const routes = [
     {
         path: "/vermont",
         element: <Vermont />,
+        errorElement: <ErrorPage />
+    },
+    {
+        path: "/new",
+        element: <NewMountain />,
         errorElement: <ErrorPage />
     },
     {
