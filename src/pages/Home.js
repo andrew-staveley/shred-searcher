@@ -20,18 +20,7 @@ function Home() {
                     <Link to="/vermont"><button className="statebutton">Vermont</button></Link>
                 </div>
                 <div id="bottom">
-                    <div id="shredlist">
-                        <h3>Places I've Been</h3>
-                        <ul>
-                            <li>Placeholder</li>
-                        </ul>
-                    </div>
-                    <div id="shredwishlist">
-                        <h3>Places to Shred</h3>
-                        <ul>
-                            <li>Placeholder</li>
-                        </ul>
-                    </div>
+                    
                 </div>
             </main>
         </>

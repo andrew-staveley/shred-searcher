@@ -1,6 +1,7 @@
 import NavBar from "../components/NavBar.js"
 import {useEffect, useState} from "react"
 import {useParams} from "react-router-dom"
+import {setItems} from "../components/ShredWishList.js"
 import "../css/Mountain.css"
 
 function Mountain() {
@@ -13,17 +14,6 @@ function Mountain() {
         .then((r) => r.json())
         .then((data) => setMountain(data))
     }, [mountainID])
-
-    function haveSkiiedHandler(e) {
-        e.preventDefault()
-        console.log("Added to Have Skiied List")
-
-    }
-
-    function wantToSkiHandler(e) {
-        e.preventDefault()
-        console.log("Added to want to ski list")
-    }
 
     function resortPageHandler(e) {
         e.preventDefault()
@@ -47,8 +37,6 @@ function Mountain() {
                     <p>Number of Runs: {mountain.trails}</p>
                 </div>
                 <div className="buttons">
-                    <button id="haveskiied" onClick={haveSkiiedHandler}>I've Shredded This Mountain</button>
-                    <button id="wannaski" onClick={wantToSkiHandler}>I Wanna Shred This Mountain</button>
                     <button id="resortpage" onClick={resortPageHandler}>Visit {mountain.name}</button>
                 </div>
             </main>
