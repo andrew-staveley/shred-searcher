@@ -7,7 +7,7 @@ function Maine() {
     const [mountains, setMountains] = useState([])
     
     useEffect(() => {
-        fetch("http://localhost:4000/mountains")
+        fetch("https://shred-searcher-backend.onrender.com/mountains")
         .then ((r) => r.json())
         .then((data) => setMountains(data))
     }, [])

@@ -9,7 +9,7 @@ function Mountain() {
     const mountainID = params.id
 
     useEffect(() => {
-        fetch(`http://localhost:4000/mountains/${mountainID}`)
+        fetch(`https://shred-searcher-backend.onrender.com/mountains/${mountainID}`)
         .then((r) => r.json())
         .then((data) => setMountain(data))
     }, [mountainID])

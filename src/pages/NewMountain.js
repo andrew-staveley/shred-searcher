@@ -65,7 +65,7 @@ function NewMountain() {
                 link: link
             })
         }
-        fetch("http://localhost:4000/mountains", configObject)
+        fetch("https://shred-searcher-backend.onrender.com/mountains", configObject)
         .then(res => res.json())
         .then(data => alert(`${data.name} has been added!`))
     }
