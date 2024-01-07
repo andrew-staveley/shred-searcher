@@ -9,6 +9,7 @@ function NavBar() {
             <NavLink to="/maine">Maine</NavLink>
             <NavLink to="/newhampshire">New Hampshire</NavLink>
             <NavLink to="/vermont">Vermont</NavLink>
+            <NavLink to="/new">Add Mountain</NavLink>
         </nav>
     )
 }
