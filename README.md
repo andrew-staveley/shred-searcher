@@ -1,5 +1,11 @@
 Shred Searcher
 
+Shred searcher is a brand new way to checkout mountains in the New England area. This is a single page application
+built using react.js. You can look at the monutains for each state, then see a bunch of useful information about each mountain.
+
+You can add mountains to your 'Shred Wish List' or to the places you've been. You can also directly visit the webpages of the
+resorts.
+
 Important Information:
 
 When running the development page, it will automatically host to http://localhost:3000
