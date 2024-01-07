@@ -1,7 +1,6 @@
 import NavBar from "../components/NavBar.js"
 import {useEffect, useState} from "react"
 import {useParams} from "react-router-dom"
-import {setItems} from "../components/ShredWishList.js"
 import "../css/Mountain.css"
 
 function Mountain() {
