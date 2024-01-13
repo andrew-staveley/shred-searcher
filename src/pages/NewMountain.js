@@ -68,6 +68,15 @@ function NewMountain() {
         fetch("https://shred-searcher-backend.onrender.com/mountains", configObject)
         .then(res => res.json())
         .then(data => alert(`${data.name} has been added!`))
+        setName("")
+        setMapLink("")
+        setLocation("")
+        setState("Maine")
+        setNightski("No")
+        setArea("")
+        setElevation("")
+        setTrails("")
+        setLink("")
     }
 
     return (
@@ -85,15 +94,15 @@ function NewMountain() {
                     <form id="newMountainForm">
                         <div className="input">
                             <label for="name">Mountain Name:</label>
-                            <input type="text" name="name" onChange={nameHandler}></input>
+                            <input type="text" name="name" onChange={nameHandler} value={name}></input>
                         </div>
                         <div className="input">
                             <label for="maplink">Link to Trailmap Image:</label>
-                            <input type="text" name="maplink" onChange={mapHandler}></input>
+                            <input type="text" name="maplink" onChange={mapHandler} value={maplink}></input>
                         </div>
                         <div className="input">
                             <label for="location">Mountain Location:</label>
-                            <input type="text" name="location" onChange={locationHandler}></input>
+                            <input type="text" name="location" onChange={locationHandler} value={location}></input>
                         </div>
                         <div className="input">
                             <label for="state">State:</label>
@@ -113,19 +122,19 @@ function NewMountain() {
                         </div>
                         <div className="input">
                             <label for="area">Area in Acres</label>
-                            <input type="text" name="area" onChange={areaHandler}></input>
+                            <input type="text" name="area" onChange={areaHandler} value={area}></input>
                         </div>
                         <div className="input">
                             <label for='elevation'>Elevation in Feet</label>
-                            <input type="text" name="elevation" onChange={elevationHandler}></input>
+                            <input type="text" name="elevation" onChange={elevationHandler} value={elevation}></input>
                         </div>
                         <div className="input">
                             <label for="trails">Trails</label>
-                            <input type="text" name="trails" onChange={trailHandler}></input>
+                            <input type="text" name="trails" onChange={trailHandler} value={trails}></input>
                         </div>
                         <div className="input">
                             <label for="resortlink">Resort Link:</label>
-                            <input type="text" name="resortlink" onChange={linkHandler}></input>
+                            <input type="text" name="resortlink" onChange={linkHandler} value={link}></input>
                         </div>
                         <div id="submitButton">
                             <button onClick={submitHandler}>Submit</button>
