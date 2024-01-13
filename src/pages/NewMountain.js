@@ -71,8 +71,6 @@ function NewMountain() {
         setName("")
         setMapLink("")
         setLocation("")
-        setState("Maine")
-        setNightski("No")
         setArea("")
         setElevation("")
         setTrails("")
